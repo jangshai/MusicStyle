@@ -332,7 +332,11 @@ namespace Project {
 			KeyPanel.loadIn();
 		}
 		private void initialForm() {
-			this.FormBorderStyle=FormBorderStyle.None;
+              for (int i = 0; i < width; i++)
+                {
+                this.FormBorderStyle = FormBorderStyle.None;
+            }   
+                
 			this.BackgroundImageLayout=ImageLayout.Stretch;
 			this.WindowState=FormWindowState.Maximized;
 		}
